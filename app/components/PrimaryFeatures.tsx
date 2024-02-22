@@ -72,7 +72,7 @@ const PrimaryFeatures = () => {
             No fuss way to review your code.
           </h3>
           <p className="mt-3">
-            Get your code review print out back with Elon Musk's handwritten
+            Get your code review print out back with Elon Musks handwritten
             notes and hand drawn emojis.
           </p>
         </div>

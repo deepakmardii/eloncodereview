@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Testimonials = () => {
@@ -67,7 +68,7 @@ const Testimonials = () => {
             Loved by developers worldwide.
           </h3>
           <p className="mt-3 text-gray-600">
-            Our process is so simple and efficient that people can't help but
+            Our process is so simple and efficient that people cant help but
             fall in love with code reviews conducted by Elon Musk on your very
             own print outs.
           </p>
@@ -96,7 +97,10 @@ const Testimonials = () => {
                     </p>
                   </blockquote>
                   <div className="flex items-center gap-x-4 p-4 mt-6 bg-indigo-50">
-                    <img
+                    <Image
+                      alt="image"
+                      width={16}
+                      height={16}
                       src={item.avatar}
                       className="w-16 h-16 rounded-full border-2 border-indigo-500"
                     />

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const Header = () => {
@@ -12,11 +13,12 @@ const Header = () => {
   ];
 
   useEffect(() => {
-    document.onclick = (e) => {
-      const target = e.target;
+    document.onclick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
       if (!target.closest(".menu-btn")) setState(false);
     };
   }, []);
+
   return (
     <nav
       className={`bg-white pb-5 md:text-sm ${
@@ -28,7 +30,7 @@ const Header = () => {
       <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
         <div className="flex items-center justify-between py-5 md:block">
           <a href="/" className="flex items-center gap-3 font-bold text-2xl">
-            <img
+            <Image
               src="https://cdn-icons-png.flaticon.com/512/186/186523.png"
               width={50}
               height={50}

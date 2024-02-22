@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
@@ -23,7 +24,7 @@ const Footer = () => {
         <div className="justify-between sm:flex">
           <div className="space-y-6">
             <a href="/" className="flex items-center gap-3 font-bold text-2xl">
-              <img
+              <Image
                 src="https://cdn-icons-png.flaticon.com/512/186/186523.png"
                 width={50}
                 height={50}
@@ -33,7 +34,10 @@ const Footer = () => {
             </a>
             <ul className="flex flex-wrap items-center gap-4 text-sm sm:text-base">
               {footerNavs.map((item, idx) => (
-                <li className="text-gray-800 hover:text-gray-500 duration-150">
+                <li
+                  key={idx}
+                  className="text-gray-800 hover:text-gray-500 duration-150"
+                >
                   <a key={idx} href={item.href}>
                     {item.name}
                   </a>
