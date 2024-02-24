@@ -350,14 +350,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 py-10 border-t md:text-center justify-between flex">
-          <div>
-            Copyright © {currentYear} ElonCodeReview. All rights reserved.
+        <div className="mt-10 py-10 border-t md:text-center grid md:grid-cols-2 gap-6">
+          <div className="text-left">
+            Copyright © {currentYear} ElonCodeReview. <br /> All rights
+            reserved.
           </div>
-          <div className="flex gap-8">
+          <div className="grid grid-flow-col text-sm md:text-base ">
             <div>Made with 🤣 and ❤️ by Deepak M.</div>
             <div className="flex gap-3">
-              <a href="https://github.com/deepakmardii">
+              <a href="https://github.com/deepakmardii/eloncodereview">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
